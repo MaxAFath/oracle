@@ -30,9 +30,17 @@ function Nav() {
             return (
                 <ul className="flex-row">
                     <li className="mx-1">
-                        <Link to="/signup">
-                            Signup
-                        </Link>
+                        <button onClick={openModal}>Sign up</button>
+                        <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        contentLabel="Sign up">
+                            <h2>Sign up today!</h2>
+                            <button onClick={closeModal}>close</button>
+                            <form>
+                                <imput />
+                            </form>
+                        </Modal>
                     </li>
                     <li className="mx-1">
                         <Link to="/login">
