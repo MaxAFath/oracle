@@ -10,14 +10,10 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import './App.css';
-<<<<<<< HEAD
-=======
-import Auth from "./utils/auth";
 //import Nav from './components/Nav/index';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
->>>>>>> develop
 
 //import pages
 import Home from './pages/Home';
@@ -72,10 +68,6 @@ function App() {
         </div>
       </Router>
     </ApolloProvider>
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
   );
 }
 
