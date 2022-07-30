@@ -6,10 +6,11 @@ const host = 'utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com';
 const key = 'c1ad77c2admsh5b84afab4ae55c6p1137bbjsn2f03e9a2c7cf';
 
 const axios = require('axios');
+var result;
 
 //this method is for requesting with a specific country that is supported list is bellow
 // supported territories uk, us, ar, at, be, br, ca, de, es, fr, ie, id, it, is, kr, my, mx, no, nl, pt, se & sg
-function reqmedia(media, location) {
+export default function reqmedia(media, location) {
     const options = {
         method: 'GET',
         url: client,
@@ -21,15 +22,15 @@ function reqmedia(media, location) {
     };
     axios.request(options).then(function (response) {
         console.log(response.data);
-        const result = response.data;
-        this.setState({ results });
+        result = response.data;
     }).catch(function (error) {
         console.error(error);
     });
+    return result;
 
 }
 //request without any country
-function reqmedia(media) {
+export default function reqmedia(media) {
     const options = {
         method: 'GET',
         url: client,
@@ -42,12 +43,13 @@ function reqmedia(media) {
 
     axios.request(options).then(function (response) {
         console.log(response.data);
-        const result = response.data;
-        this.setState({ results });
+        result = response.data;
     }).catch(function (error) {
         console.error(error);
     });
+    return result;
 }
+
 /*
 const options = {
         method: 'GET',
