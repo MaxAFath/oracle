@@ -18,7 +18,6 @@ import Footer from './components/Footer';
 //import pages
 import Home from './pages/Home';
 import Login from './pages/Login';
-//import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 
 //httpLink and authLink
