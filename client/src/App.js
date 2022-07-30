@@ -10,11 +10,19 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import './App.css';
+<<<<<<< HEAD
+=======
+import Auth from "./utils/auth";
+//import Nav from './components/Nav/index';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+>>>>>>> develop
 
 //import pages
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Profile from './pages/Profile';
+//import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 
 //httpLink and authLink
@@ -58,21 +66,16 @@ function App() {
                 path="/signup" 
                 element={<Signup />} 
               />
-              <Route 
-                path="/profile" 
-                element={<Profile />} 
-              />
-              <Route 
-                path="*" 
-                element={<NoMatch />} 
-              />
             </Routes>
           </div>
           <Footer />
         </div>
       </Router>
     </ApolloProvider>
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
   );
 }
 

@@ -1,16 +1,16 @@
 import React from 'react';
-import SearchForm from '../components/SearchForm';
-import Searched from '../components/Searched';
-import Watched from '../components/Watched';
+import SearchForm from '../components/Search/index';
+//import Searched from '../components/Searched/index';
+//import Queue from '../components/Queue';
 
 import Auth from '../utils/auth';
-import { useQuery } from '@apollo/client';
-import { QUERY_WATCHED, QUERY_ME_BASIC } from '../utils/queries';
+//import { useQuery } from '@apollo/client';
+//import { QUERY_QUEUE, QUERY_ME_BASIC } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_WATCHED);
-  const { data: userData } = useQuery(QUERY_ME_BASIC);
-  const streamed = data?.Watched || [];
+  //const { loading, data } = useQuery(QUERY_QUEUE);
+  //const { data: userData } = useQuery(QUERY_ME_BASIC);
+  //const streamed = data?.Queue || [];
 
   const loggedIn = Auth.loggedIn();
 
@@ -22,13 +22,21 @@ const Home = () => {
             <SearchForm />
           </div>
         )}
-        <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
+        
+      </div>
+    </main>
+  );
+};
+
+export default Home;
+/* sacrifice to get project to mvp
+<div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <Watched
-              streamed={streamed}
-              title="Content You've Streamed"
+            <Queue
+              queue={queue}
+              title="Your Queue"
             />
           )}
         </div>
@@ -40,9 +48,4 @@ const Home = () => {
             />
           </div>
         ) : null}
-      </div>
-    </main>
-  );
-};
-
-export default Home;
+        */
