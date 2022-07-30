@@ -1,15 +1,15 @@
 import React from 'react';
-import SearchForm from '../components/Search';
+import SearchForm from '../components/Search/index';
 import Searched from '../components/Searched/index';
 import Queue from '../components/Queue';
 
 import Auth from '../utils/auth';
-import { useQuery } from '@apollo/client';
-import { QUERY_QUEUE, QUERY_ME_BASIC } from '../utils/queries';
+//import { useQuery } from '@apollo/client';
+//import { QUERY_QUEUE, QUERY_ME_BASIC } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_QUEUE);
-  const { data: userData } = useQuery(QUERY_ME_BASIC);
+  //const { loading, data } = useQuery(QUERY_QUEUE);
+  //const { data: userData } = useQuery(QUERY_ME_BASIC);
   const streamed = data?.Queue || [];
 
   const loggedIn = Auth.loggedIn();

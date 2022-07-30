@@ -2,7 +2,7 @@ import React from "react";
 import Auth from "../../utils/auth";
 import { Link, renderMatches } from "react-router-dom";
 import axios from 'axios';
-import mediaSearch from '../../utils/queries';
+import mediaSearch from '../../utils/lookup';
 
 function SearchBar() {
    $("#submit").click(function(event){

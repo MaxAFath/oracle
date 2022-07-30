@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-
+/*
 import Searched from '../components/Searched';
 import Queue from '../components/Queue';
 import SearchForm from '../components/SearchForm';
@@ -83,3 +83,4 @@ const Profile = (props) => {
 };
 
 export default Profile;
+*/
