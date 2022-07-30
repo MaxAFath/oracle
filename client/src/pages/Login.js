@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
@@ -79,6 +78,3 @@ const Login = () => {
 };
 
 export default Login;
-=======
-import React from "react";
->>>>>>> 1a8a1c60bc1c73137843e359eb1b849a22f9d86c

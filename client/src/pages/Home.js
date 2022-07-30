@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchForm from '../components/SearchForm';
-import Searched from '../components/Searched';
+import Searched from '../components/Searched/index';
 import Watched from '../components/Watched';
 
 import Auth from '../utils/auth';

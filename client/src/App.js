@@ -42,7 +42,6 @@ const client = new ApolloClient({
 
 function App() {
   return (
-<<<<<<< HEAD
     <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
@@ -75,14 +74,6 @@ function App() {
         </div>
       </Router>
     </ApolloProvider>
-=======
-    <div className='App'>
-      <Nav></Nav>
-      <main>
-        <Search></Search>
-      </main>
-    </div>
->>>>>>> 1a8a1c60bc1c73137843e359eb1b849a22f9d86c
   );
 }
 
