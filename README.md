@@ -14,14 +14,6 @@ As a viewer of shows and movies, I want a place to house all of the content that
 ## Technologies Used
 MongoDB, Express.js, React, Node.js, Performant JavaScript, GraphQL, Apollo, Mongoose ODM, NoSQL
 
-## Screenshot
-
-
-## Deployed Application
-
-
-
-
 ## Available Scripts
 
 In the project directory, you can run:
