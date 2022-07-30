@@ -10,7 +10,8 @@ import { setContext } from '@apollo/client/link/context';
 import './App.css';
 import Auth from "./utils/auth";
 import Nav from './components/Nav/index';
-import Search from './components/Search/index';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 //import pages

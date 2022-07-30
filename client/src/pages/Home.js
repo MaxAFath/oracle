@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchForm from '../components/Search/index';
-import Searched from '../components/Searched/index';
-import Queue from '../components/Queue';
+//import Searched from '../components/Searched/index';
+//import Queue from '../components/Queue';
 
 import Auth from '../utils/auth';
 //import { useQuery } from '@apollo/client';
@@ -10,7 +10,7 @@ import Auth from '../utils/auth';
 const Home = () => {
   //const { loading, data } = useQuery(QUERY_QUEUE);
   //const { data: userData } = useQuery(QUERY_ME_BASIC);
-  const streamed = data?.Queue || [];
+  //const streamed = data?.Queue || [];
 
   const loggedIn = Auth.loggedIn();
 
@@ -22,7 +22,15 @@ const Home = () => {
             <SearchForm />
           </div>
         )}
-        <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
+        
+      </div>
+    </main>
+  );
+};
+
+export default Home;
+/* sacrifice to get project to mvp
+<div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
           {loading ? (
             <div>Loading...</div>
           ) : (
@@ -40,9 +48,4 @@ const Home = () => {
             />
           </div>
         ) : null}
-      </div>
-    </main>
-  );
-};
-
-export default Home;
+        */
