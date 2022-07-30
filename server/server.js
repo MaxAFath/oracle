@@ -17,6 +17,11 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/queueHQ', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
     await server.start();
