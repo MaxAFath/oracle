@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Signup from '../Signup/Form';
 
 function Nav() {
     function showNavigation() {
@@ -30,9 +31,15 @@ function Nav() {
             return (
                 <ul className="flex-row">
                     <li className="mx-1">
-                        <Link to="/signup">
-                            Signup
-                        </Link>
+                        <button onClick={openModal}>Sign up</button>
+                        <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        contentLabel="Sign up">
+                            <h2>Sign up today!</h2>
+                            <button onClick={closeModal}>close</button>
+                            <Signup></Signup>
+                        </Modal>
                     </li>
                     <li className="mx-1">
                         <Link to="/login">
