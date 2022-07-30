@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# QueueHQ
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Description
+Most streaming services offer a queue, but we wanted to create a centralized spot for people to queue up any show or movie they want, regardless of the streaming service.
+
+Whenever someone tells us about a show or movie that we should check out, often times our first question in response is “what streaming service is that on?” We wanted a simple way to keep track of all the content you want to get around to watching. 
+
+As it continues to cost more and more for streaming services, the more aware we are about where we get our content from, the easier it’ll be for us to manage our subscriptions and cancel services that we rarely use.
+
+As a viewer of shows and movies, I want a place to house all of the content that I want to stream so I don’t forget anything and so that I know what services I can find each piece of content on.
+
+## Technologies Used
+MongoDB, Express.js, React, Node.js, Performant JavaScript, GraphQL, Apollo, Mongoose ODM, NoSQL
+
+## Screenshot
+
+
+## Deployed Application
+
+
+
 
 ## Available Scripts
 
