@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchForm from '../components/SearchForm';
+import SearchForm from '../components/Search';
 import Searched from '../components/Searched/index';
 import Queue from '../components/Queue';
 
